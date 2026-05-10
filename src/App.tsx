@@ -28,11 +28,11 @@ Nachricht: ${message}`);
   
   const mailto = `mailto:${ORGANIZER_EMAIL}?subject=${subject}&body=${body}`;
   return (
-    <main className="relative mx-auto max-w-4xl px-4 sm:px-6 pb-12 sm:pb-20">
+    <main className="relative mx-auto max-w-4xl px-4 sm:px-6 pb-12 sm:pb-20 overflow-hidden">
         <img src={partyhat} className="pointer-events-none absolute -right-4 top-4 h-20 w-20 sm:right-4 sm:-top-2 sm:h-20 sm:w-20 md:h-28 md:w-28 text-primary/60 -rotate-12" />
-        <img src={glass} className="pointer-events-none absolute -left-16 bottom-4 h-24 w-24 sm:bottom-6 sm:h-24 sm:w-24 md:h-32 md:w-32 text-primary/70" />
-        <img src={glasses} className="pointer-events-none absolute -right-8 bottom-8 h-24 w-24 sm:h-24 sm:w-24 md:h-32 md:w-32 text-primary/60 md:block" />
-        <img src={girlande} className="pointer-events-none absolute -left-8 -top-4 h-32 w-32 sm:h-40 sm:w-40 md:h-48 md:w-48 text-primary/60" />
+        <img src={glass} className="pointer-events-none absolute -left-12 bottom-4 h-24 w-24 sm:-left-8 sm:bottom-6 sm:h-24 sm:w-24 md:-left-16 md:h-32 md:w-32 text-primary/70" />
+        <img src={glasses} className="pointer-events-none absolute -right-4 bottom-8 h-24 w-24 sm:-right-8 sm:h-24 sm:w-24 md:h-32 md:w-32 text-primary/60 md:block" />
+        <img src={girlande} className="pointer-events-none absolute -left-6 -top-4 h-32 w-32 sm:-left-8 sm:h-40 sm:w-40 md:-left-8 md:h-48 md:w-48 text-primary/60" />
       <div className="relative overflow-hidden text-primary">
         <header className="text-center relative z-10 flex flex-col items-center justify-center px-4 py-8">
           <h1 className="text-4xl sm:text-6xl md:text-8xl leading-none">
