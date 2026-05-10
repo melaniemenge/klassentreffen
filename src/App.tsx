@@ -38,7 +38,7 @@ Nachricht: ${message}`);
       <div className="relative overflow-hidden text-primary">
         <header className="text-center relative z-10 flex flex-col items-center justify-center px-4 py-8">
           <img src={zehnJahre} alt="10 Jahre" className="h-24 w-auto sm:h-32 md:h-40" />
-          <img src={hands} alt="Hands" className="pointer-events-none h-20 w-40 sm:h-28 sm:w-56 md:h-40 md:w-80" style={{ color: 'var(--text-h)' }} />
+          <img src={hands} alt="Hands" className="pointer-events-none h-40 w-80 sm:h-28 sm:w-56 md:h-40 md:w-80" style={{ filter: 'invert(0.25) brightness(0.3)' }} />
           <p className="mt-12 text-sm font-bold uppercase tracking-widest md:text-base">
             Klassentreffen der<br />Abschlussklassen 2017
           </p>
