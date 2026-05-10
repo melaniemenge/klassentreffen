@@ -1,4 +1,5 @@
 import './App.css'
+import zehnJahre from '/10jahre.png';
 import hands from '/assets/hands.svg';
 import partyhat from '/assets/partyhat.svg';
 import glass from '/assets/glass.svg';
@@ -36,9 +37,7 @@ Nachricht: ${message}`);
         <img src={girlande} className="pointer-events-none absolute -left-6 -top-4 h-32 w-32 sm:-left-8 sm:h-40 sm:w-40 md:-left-8 md:h-48 md:w-48 text-primary/60" />
       <div className="relative overflow-hidden text-primary">
         <header className="text-center relative z-10 flex flex-col items-center justify-center px-4 py-8">
-          <h1 className="text-8xl sm:text-8xl md:text-8xl leading-none font-cookie text-primary/90">
-            10 Jahre
-          </h1>
+          <img src={zehnJahre} alt="10 Jahre" className="h-24 w-auto sm:h-32 md:h-40" />
           <img src={hands} alt="Hands" className="pointer-events-none h-20 w-40 sm:h-28 sm:w-56 md:h-40 md:w-80" />
           <p className="mt-12 text-sm font-bold uppercase tracking-widest md:text-base">
             Klassentreffen der<br />Abschlussklassen 2017
