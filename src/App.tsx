@@ -40,10 +40,9 @@ Nachricht: ${message}`);
             10 Jahre
           </h1>
           <img src={hands} alt="Hands" className="pointer-events-none h-20 w-40 sm:h-28 sm:w-56 md:h-40 md:w-80" />
-          <p className="mt-8 text-sm font-bold uppercase tracking-widest md:text-base">
+          <p className="mt-12 text-sm font-bold uppercase tracking-widest md:text-base">
             Klassentreffen der<br />Abschlussklassen 2017
           </p>
-          <p className="mt-3 text-base md:text-lg">Frauenfeld</p>
           <p className="mt-10 text-xs tracking-[0.3em] text-muted-foreground">
             2017 — 2027
           </p>
@@ -59,7 +58,7 @@ Nachricht: ${message}`);
             </div>
             <div>
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Zeit</dt>
-              <dd>18:00 Uhr</dd>
+              <dd>tbd</dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Ort</dt>
@@ -82,7 +81,7 @@ Nachricht: ${message}`);
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+            className="mt-5 inline-flex items-center justify-center rounded-full bg-neutral-600 px-8 py-3 text-sm font-medium text-white transition hover:opacity-90"
           >
             WhatsApp-Gruppe beitreten
           </a>
