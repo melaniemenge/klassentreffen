@@ -31,14 +31,14 @@ Nachricht: ${message}`);
   const mailto = `mailto:${ORGANIZER_EMAIL}?subject=${subject}&body=${body}`;
   return (
     <main className="relative mx-auto max-w-4xl px-4 sm:px-6 pb-12 sm:pb-20 overflow-hidden">
-        <img src={partyhat} className="pointer-events-none absolute -right-4 top-4 h-20 w-20 sm:right-4 sm:-top-2 sm:h-20 sm:w-20 md:h-28 md:w-28 text-primary/60 -rotate-12" />
-        <img src={glass} className="pointer-events-none absolute -left-12 bottom-4 h-24 w-24 sm:-left-8 sm:bottom-6 sm:h-24 sm:w-24 md:-left-16 md:h-32 md:w-32 text-primary/70" />
-        <img src={glasses} className="pointer-events-none absolute -right-4 bottom-8 h-24 w-24 sm:-right-8 sm:h-24 sm:w-24 md:h-32 md:w-32 text-primary/60 md:block" />
-        <img src={girlande} className="pointer-events-none absolute -left-6 -top-4 h-32 w-32 sm:-left-8 sm:h-40 sm:w-40 md:-left-8 md:h-48 md:w-48 text-primary/60" />
+        <img src={partyhat} className="pointer-events-none absolute -right-4 top-4 h-20 w-20 sm:right-4 sm:-top-2 sm:h-20 sm:w-20 md:h-28 md:w-28 -rotate-12" style={{ color: 'var(--text-h)' }} />
+        <img src={glass} className="pointer-events-none absolute -left-12 bottom-4 h-24 w-24 sm:-left-8 sm:bottom-6 sm:h-24 sm:w-24 md:-left-16 md:h-32 md:w-32" style={{ color: 'var(--text-h)' }} />
+        <img src={glasses} className="pointer-events-none absolute -right-4 bottom-8 h-24 w-24 sm:-right-8 sm:h-24 sm:w-24 md:h-32 md:w-32 md:block" style={{ color: 'var(--text-h)' }} />
+        <img src={girlande} className="pointer-events-none absolute -left-6 -top-4 h-32 w-32 sm:-left-8 sm:h-40 sm:w-40 md:-left-8 md:h-48 md:w-48" style={{ color: 'var(--text-h)' }} />
       <div className="relative overflow-hidden text-primary">
         <header className="text-center relative z-10 flex flex-col items-center justify-center px-4 py-8">
           <img src={zehnJahre} alt="10 Jahre" className="h-24 w-auto sm:h-32 md:h-40" />
-          <img src={hands} alt="Hands" className="pointer-events-none h-20 w-40 sm:h-28 sm:w-56 md:h-40 md:w-80" />
+          <img src={hands} alt="Hands" className="pointer-events-none h-20 w-40 sm:h-28 sm:w-56 md:h-40 md:w-80" style={{ color: 'var(--text-h)' }} />
           <p className="mt-12 text-sm font-bold uppercase tracking-widest md:text-base">
             Klassentreffen der<br />Abschlussklassen 2017
           </p>
@@ -80,7 +80,8 @@ Nachricht: ${message}`);
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="mt-5 inline-flex items-center justify-center rounded-full bg-neutral-600 px-8 py-3 text-sm font-medium text-white transition hover:opacity-90"
+            className="mt-5 inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium text-white transition hover:opacity-90"
+            style={{ backgroundColor: 'var(--text-h)' }}
           >
             WhatsApp-Gruppe beitreten
           </a>
