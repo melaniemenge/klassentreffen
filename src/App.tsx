@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 const ORGANIZER_EMAIL = ''
 const subject = encodeURIComponent('Anmeldung zum Klassentreffen 2027');
+const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
 
 function App() {
   const [name, setName] = useState("");
@@ -35,7 +36,7 @@ Nachricht: ${message}`);
         <img src={girlande} className="pointer-events-none absolute -left-6 -top-4 h-32 w-32 sm:-left-8 sm:h-40 sm:w-40 md:-left-8 md:h-48 md:w-48 text-primary/60" />
       <div className="relative overflow-hidden text-primary">
         <header className="text-center relative z-10 flex flex-col items-center justify-center px-4 py-8">
-          <h1 className="text-4xl sm:text-6xl md:text-8xl leading-none">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl leading-none font-parisienne-regular text-primary/90">
             10 Jahre
           </h1>
           <img src={hands} alt="Hands" className="pointer-events-none h-20 w-40 sm:h-28 sm:w-56 md:h-40 md:w-80" />
@@ -69,6 +70,22 @@ Nachricht: ${message}`);
               </dd>
             </div>
           </dl>
+        </div>
+
+        {/* WhatsApp */}
+        <div className="mt-10 text-center">
+          <h2 className="text-2xl font-semibold">Bleib auf dem Laufenden</h2>
+          <p className="mt-2 text-muted-foreground">
+            Tritt unserer WhatsApp-Gruppe bei für Updates und Smalltalk vor dem Treffen.
+          </p>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+          >
+            WhatsApp-Gruppe beitreten
+          </a>
         </div>
         {/* Signup form */}
         <div className="mt-12 sm:mt-16">

@@ -1,4 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import "tailwindcss";
+
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+@theme{
+  --font-cookie: "Cookie", cursive;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -15,6 +27,7 @@
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  --font-parisienne: "Parisienne", cursive;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -30,6 +43,7 @@
     font-size: 16px;
   }
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -72,6 +86,7 @@ h2 {
 }
 
 h1 {
+  font-family: var(--font-parisienne);
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
