@@ -7,8 +7,6 @@ import glasses from '/assets/glasses.svg';
 import girlande from '/assets/girlande.svg';
 import { useState } from 'react';
 
-const ORGANIZER_EMAIL = 'klassentreffen27@proton.me'
-const subject = encodeURIComponent('Anmeldung zum Klassentreffen 2027');
 const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
 const WHATSAPP_URL_OK = 'https://chat.whatsapp.com/BvYR9LyuCAg311B40X5YEU?mode=gi_t';
 
@@ -20,6 +18,9 @@ function App() {
   };
   
   {/*
+
+  const ORGANIZER_EMAIL = 'klassentreffen27@proton.me'
+  const subject = encodeURIComponent('Anmeldung zum Klassentreffen 2027');
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [guests, setGuests] = useState("1");
