@@ -175,7 +175,7 @@ Nachricht: ${message}
             {openAccordion === 4 && (
               <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
                 <p>Du möchtest bei der Planung und Organisation mithelfen? Super, wir freuen uns über jede Unterstützung!</p>
-                <p>Hier kannst du unserer Whatsapp-Gruppe beitreten: <a href={WHATSAPP_URL_OK} target="_blank" rel="noreferrer" className="text-primary hover:underline">WhastApp-Gruppe</a></p>
+                <p>Hier kannst du unserer WhatsApp-Gruppe beitreten: <a href={WHATSAPP_URL_OK} target="_blank" rel="noreferrer" className="text-primary hover:underline">WhatsApp-Gruppe</a></p>
               </div>
             )}
           </div>
