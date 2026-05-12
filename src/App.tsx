@@ -17,16 +17,21 @@ function App() {
   const [guests, setGuests] = useState("1");
   const [diet, setDiet] = useState("");
   const [message, setMessage] = useState("");
+  const [openAccordion, setOpenAccordion] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
+    setOpenAccordion(openAccordion === index ? null : index);
+  };
   
   const body = encodeURIComponent(`Hallo zusammen,
-
-ich möchte mich hiermit für das Klassentreffen am 12. Juni 2027 anmelden.
-
+ich möchte mich hiermit für das Klassentreffen 2027 anmelden. Hier sind meine Details:
 Name: ${name}
 E-Mail: ${email}
 Anzahl Personen: ${guests}
 Ernährung / Allergien: ${diet}
-Nachricht: ${message}`);
+Nachricht: ${message}
+
+`);
   
   const mailto = `mailto:${ORGANIZER_EMAIL}?subject=${subject}&body=${body}`;
   return (
@@ -63,11 +68,92 @@ Nachricht: ${message}`);
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Ort</dt>
               <dd>
                 Mensa, Kantonsschule Frauenfeld
-                <br />
-                <span className="text-muted-foreground">Speicherstrasse 10, 8500 Frauenfeld</span>
+                
               </dd>
             </div>
           </dl>
+        </div>
+
+        {/* Event info - Accordion */}
+        <div className="mt-10 sm:mt-16 rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-sm overflow-hidden">
+          <h2 className="text-2xl font-semibold p-4 sm:p-8 pb-4 sm:pb-4">Informationen rund ums Event</h2>
+          
+          {/* Accordion Item 1 */}
+          <div className="border-t border-primary/20">
+            <button
+              onClick={() => toggleAccordion(0)}
+              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+            >
+              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Anmeldung</dt>
+              <span style={{ color: 'var(--text-h)' }} className="text-xl">
+                {openAccordion === 0 ? '−' : '+'}
+              </span>
+            </button>
+            {openAccordion === 0 && (
+              <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base">
+                <p>Die Anmeldung ist ab dem 01. Januar 2027 über diese Website möglich.</p>
+              </div>
+            )}
+          </div>
+
+          {/* Accordion Item 2 */}
+          <div className="border-t border-primary/20 text-left">
+            <button
+              onClick={() => toggleAccordion(1)}
+              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+            >
+              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Menü</dt>
+              <span style={{ color: 'var(--text-h)' }} className="text-xl">
+                {openAccordion === 1 ? '−' : '+'}
+              </span>
+            </button>
+            {openAccordion === 1 && (
+              <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
+                <p className="mb-2">Apéro mit Salzgebäck und Getränken.</p><br/>
+                <p className="mb-2">Penneplausch mit Vier verschiedenen Saucen zur Auswahl.</p>
+                <p className="mb-2">Dazu gibt es Gemüse und zum Dessert ein leckeres Schoggimousse.</p>
+                <p>Getränke werden ebenfalls bereitgestellt.</p>
+              </div>
+            )}
+          </div>
+
+          {/* Accordion Item 3 */}
+          <div className="border-t border-primary/20">
+            <button
+              onClick={() => toggleAccordion(2)}
+              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+            >
+              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Ablauf</dt>
+              <span style={{ color: 'var(--text-h)' }} className="text-xl">
+                {openAccordion === 2 ? '−' : '+'}
+              </span>
+            </button>
+            {openAccordion === 2 && (
+              <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
+                <p>Der genaue Ablauf wird noch bekannt gegeben. Bleib gespannt!</p>
+              </div>
+            )}
+          </div>
+
+          {/* Accordion Item 4 */}
+          <div className="border-t border-primary/20">
+            <button
+              onClick={() => toggleAccordion(3)}
+              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+            >
+              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Kosten</dt>
+              <span style={{ color: 'var(--text-h)' }} className="text-xl">
+                {openAccordion === 3 ? '−' : '+'}
+              </span>
+            </button>
+            {openAccordion === 3 && (
+              <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
+                <p>Die Kosten belaufen sich auf 50 CHF pro Person.</p>
+                <p>Mit dem Betrag sind Getränke, Essen und die Räumlichkeit inkl. Deko beglichen.</p><br/>
+                <p>Die Bezahlung erfolgt bei Anmeldung via Twint.</p><br/>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* WhatsApp */}
