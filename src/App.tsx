@@ -7,23 +7,25 @@ import glasses from '/assets/glasses.svg';
 import girlande from '/assets/girlande.svg';
 import { useState } from 'react';
 
-const ORGANIZER_EMAIL = ''
+const ORGANIZER_EMAIL = 'klassentreffen27@proton.me'
 const subject = encodeURIComponent('Anmeldung zum Klassentreffen 2027');
 const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
 const WHATSAPP_URL_OK = 'https://chat.whatsapp.com/BvYR9LyuCAg311B40X5YEU?mode=gi_t';
 
 function App() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [guests, setGuests] = useState("1");
-  const [diet, setDiet] = useState("");
-  const [message, setMessage] = useState("");
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
   const toggleAccordion = (index: number) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
   
+  {/*
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [guests, setGuests] = useState("1");
+  const [diet, setDiet] = useState("");
+  const [message, setMessage] = useState("");
+
   const body = encodeURIComponent(`Hallo zusammen,
 ich möchte mich hiermit für das Klassentreffen 2027 anmelden. Hier sind meine Details:
 Name: ${name}
@@ -35,6 +37,8 @@ Nachricht: ${message}
 `);
   
   const mailto = `mailto:${ORGANIZER_EMAIL}?subject=${subject}&body=${body}`;
+
+  */}
   return (
     <main className="relative mx-auto max-w-4xl px-4 sm:px-6 pb-12 sm:pb-20 overflow-hidden">
         <img src={partyhat} className="pointer-events-none absolute -right-4 top-4 h-20 w-20 sm:right-4 sm:-top-2 sm:h-20 sm:w-20 md:h-28 md:w-28 -rotate-12" style={{ color: 'var(--text-h)' }} />
