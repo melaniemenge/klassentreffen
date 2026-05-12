@@ -10,6 +10,7 @@ import { useState } from 'react';
 const ORGANIZER_EMAIL = ''
 const subject = encodeURIComponent('Anmeldung zum Klassentreffen 2027');
 const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
+const WHATSAPP_URL_OK = 'https://chat.whatsapp.com/BvYR9LyuCAg311B40X5YEU?mode=gi_t';
 
 function App() {
   const [name, setName] = useState("");
@@ -154,6 +155,26 @@ Nachricht: ${message}
               </div>
             )}
           </div>
+
+          {/* Accordion Item 5 */}
+          <div className="border-t border-primary/20">
+            <button
+              onClick={() => toggleAccordion(4)}
+              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+            >
+              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Mitwirken</dt>
+              <span style={{ color: 'var(--text-h)' }} className="text-xl">
+                {openAccordion === 4 ? '−' : '+'}
+              </span>
+            </button>
+            {openAccordion === 4 && (
+              <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
+                <p>Du möchtest bei der Planung und Organisation mithelfen? Super, wir freuen uns über jede Unterstützung!</p>
+                <p>Hier kannst du unserer Whatsapp-Gruppe beitreten: <a href={WHATSAPP_URL_OK} target="_blank" rel="noreferrer" className="text-primary hover:underline">WhastApp-Gruppe</a></p>
+              </div>
+            )}
+          </div>
+
         </div>
 
         {/* WhatsApp */}
@@ -172,7 +193,7 @@ Nachricht: ${message}
             WhatsApp-Gruppe beitreten
           </a>
         </div>
-        {/* Signup form */}
+        {/* Signup form 
         <div className="mt-12 sm:mt-16">
           <h2 className="text-center text-2xl font-semibold">Anmeldung</h2>
           <p className="mt-2 text-center text-muted-foreground">
@@ -198,6 +219,7 @@ Nachricht: ${message}
             </p>
           </form>
         </div>
+        */}
     </main>
   )
 }
