@@ -82,7 +82,9 @@ Nachricht: ${message}
             Hast du Ideen für das Klassentreffen oder möchtest du etwas beitragen? Dann gib uns hier Input: 
           </p> 
           <div className=" inline-flex items-center px-6 py-3  font-semibold rounded  transition-colors duration-200">
-            <img src={qr} alt="QR-Code für Ideensammlung" className="w-48 h-48 mt-4" />
+            <a href="https://form.typeform.com/to/gXCcQa6W" target="_blank" rel="noopener noreferrer">
+              <img src={qr} alt="QR-Code für Ideensammlung" className="w-48 h-48 mt-4" />
+            </a>
           </div>
         </div>
 
