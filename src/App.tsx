@@ -5,6 +5,7 @@ import partyhat from '/assets/partyhat.svg';
 import glass from '/assets/glass.svg';
 import glasses from '/assets/glasses.svg';
 import girlande from '/assets/girlande.svg';
+import qr from '/assets/qr-form.png';
 import { useState } from 'react';
 
 const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
@@ -67,10 +68,6 @@ Nachricht: ${message}
               <dd>12. Juni 2027</dd>
             </div>
             <div>
-              <dt className="text-xs uppercase tracking-wider text-muted-foreground">Zeit</dt>
-              <dd>tbd</dd>
-            </div>
-            <div>
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Ort</dt>
               <dd>
                 Mensa, Kantonsschule Frauenfeld
@@ -78,6 +75,15 @@ Nachricht: ${message}
               </dd>
             </div>
           </dl>
+        </div>
+        <div className="mt-6 sm:mt-8 rounded-2xl border-primary/20 bg-card/60 p-4 sm:p-8 backdrop-blur-sm justify-center">
+          <h2 className="text-2xl font-semibold">Input für Ideen</h2>
+          <p className="mt-4 text-base">
+            Hast du Ideen für das Klassentreffen oder möchtest du etwas beitragen? Dann gib uns hier Input: 
+          </p> 
+          <div className=" inline-flex items-center px-6 py-3  font-semibold rounded  transition-colors duration-200">
+            <img src={qr} alt="QR-Code für Ideensammlung" className="w-48 h-48 mt-4" />
+          </div>
         </div>
 
         {/* Event info - Accordion */}
