@@ -5,7 +5,6 @@ import partyhat from '/assets/partyhat.svg';
 import glass from '/assets/glass.svg';
 import glasses from '/assets/glasses.svg';
 import girlande from '/assets/girlande.svg';
-import qr from '/assets/qr-form.png';
 import { useState } from 'react';
 
 const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
