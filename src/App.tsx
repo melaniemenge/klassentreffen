@@ -75,7 +75,7 @@ Nachricht: ${message}
             </div>
           </dl>
         </div>
-        <div className="mt-4 sm:mt-8 rounded-2xl border border-primary/20 bg-card/60 p-3 sm:p-8 backdrop-blur-sm flex flex-col items-center text-center">
+        <div className="mt-4 sm:mt-8 rounded-2xl bg-card/60 p-3 sm:p-8 backdrop-blur-sm flex flex-col items-center text-center">
           <h2 className="text-lg sm:text-2xl font-semibold">Input für Ideen</h2>
           <p className="mt-2 sm:mt-4 text-sm sm:text-base">
             Hast du Ideen für das Klassentreffen oder möchtest du etwas beitragen? Dann gib uns hier Input: 
