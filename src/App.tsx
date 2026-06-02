@@ -81,10 +81,8 @@ Nachricht: ${message}
           <p className="mt-4 text-base">
             Hast du Ideen für das Klassentreffen oder möchtest du etwas beitragen? Dann gib uns hier Input: 
           </p> 
-          <div className=" inline-flex items-center px-6 py-3  font-semibold rounded  transition-colors duration-200">
             <a className='underline' href="https://form.typeform.com/to/gXCcQa6W" target="_blank" rel="noopener noreferrer">https://form.typeform.com/to/gXCcQa6W</a>
             
-          </div>
         </div>
 
         {/* Event info - Accordion */}
