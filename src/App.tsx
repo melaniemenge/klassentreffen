@@ -41,7 +41,7 @@ Nachricht: ${message}
 
   */}
   return (
-    <main className="relative mx-auto max-w-4xl px-4 sm:px-6 pb-12 sm:pb-20 overflow-hidden">
+    <main className="relative mx-auto max-w-4xl px-3 sm:px-6 pb-8 sm:pb-20 overflow-hidden">
         <img src={partyhat} className="pointer-events-none absolute -right-4 top-4 h-20 w-20 sm:right-4 sm:-top-2 sm:h-20 sm:w-20 md:h-28 md:w-28 -rotate-12" style={{ color: 'var(--text-h)' }} />
         <img src={glass} className="pointer-events-none absolute -left-12 bottom-4 h-24 w-24 sm:-left-8 sm:bottom-6 sm:h-24 sm:w-24 md:-left-16 md:h-32 md:w-32" style={{ color: 'var(--text-h)' }} />
         <img src={glasses} className="pointer-events-none absolute -right-4 bottom-8 h-24 w-24 sm:-right-8 sm:h-24 sm:w-24 md:h-32 md:w-32 md:block" style={{ color: 'var(--text-h)' }} />
@@ -50,17 +50,17 @@ Nachricht: ${message}
         <header className="text-center relative z-10 flex flex-col items-center justify-center px-4 py-8">
           <img src={zehnJahre} alt="10 Jahre" className="h-24 w-auto sm:h-32 md:h-40" />
           <img src={hands} alt="Hands" className="pointer-events-none h-40 w-80 sm:h-28 sm:w-56 md:h-40 md:w-80" style={{ filter: 'invert(0.25) brightness(0.3)' }} />
-          <p className="mt-12 text-sm font-bold uppercase tracking-widest md:text-base">
+          <p className="mt-8 text-xs sm:text-sm font-bold uppercase tracking-widest md:text-base">
             Klassentreffen der<br />Abschlussklassen 2017
           </p>
-          <p className="mt-10 text-xs tracking-[0.3em] text-muted-foreground">
+          <p className="mt-6 sm:mt-10 text-xs tracking-[0.3em] text-muted-foreground">
             2017 — 2027
           </p>
         </header>
       </div>
       {/* Event info */}
-        <div className="mt-6 sm:mt-8 rounded-2xl border border-primary/20 bg-card/60 p-4 sm:p-8 backdrop-blur-sm">
-          <h2 className="text-2xl font-semibold">Wann & wo</h2>
+        <div className="mt-4 sm:mt-8 rounded-2xl border border-primary/20 bg-card/60 p-3 sm:p-8 backdrop-blur-sm">
+          <h2 className="text-lg sm:text-2xl font-semibold">Wann & wo</h2>
           <dl className="mt-5 space-y-3 text-base">
             <div>
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Datum</dt>
@@ -75,9 +75,9 @@ Nachricht: ${message}
             </div>
           </dl>
         </div>
-        <div className="mt-6 sm:mt-8 rounded-2xl border-primary/20 bg-card/60 p-4 sm:p-8 backdrop-blur-sm justify-center">
-          <h2 className="text-2xl font-semibold">Input für Ideen</h2>
-          <p className="mt-4 text-base">
+        <div className="mt-4 sm:mt-8 rounded-2xl border border-primary/20 bg-card/60 p-3 sm:p-8 backdrop-blur-sm flex flex-col items-center text-center">
+          <h2 className="text-lg sm:text-2xl font-semibold">Input für Ideen</h2>
+          <p className="mt-2 sm:mt-4 text-sm sm:text-base">
             Hast du Ideen für das Klassentreffen oder möchtest du etwas beitragen? Dann gib uns hier Input: 
           </p> 
             <a className='underline' href="https://form.typeform.com/to/gXCcQa6W" target="_blank" rel="noopener noreferrer">https://form.typeform.com/to/gXCcQa6W</a>
@@ -86,13 +86,13 @@ Nachricht: ${message}
 
         {/* Event info - Accordion */}
         <div className="mt-10 sm:mt-16 rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-sm overflow-hidden">
-          <h2 className="text-2xl font-semibold p-4 sm:p-8 pb-4 sm:pb-4">Informationen rund ums Event</h2>
+          <h2 className="text-lg sm:text-2xl font-semibold p-3 sm:p-8 pb-3 sm:pb-4">Informationen rund ums Event</h2>
           
           {/* Accordion Item 1 */}
           <div className="border-t border-primary/20">
             <button
               onClick={() => toggleAccordion(0)}
-              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+              className="w-full flex justify-between items-center p-3 sm:p-8 hover:bg-primary/5 transition"
             >
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Anmeldung</dt>
               <span style={{ color: 'var(--text-h)' }} className="text-xl">
@@ -100,7 +100,7 @@ Nachricht: ${message}
               </span>
             </button>
             {openAccordion === 0 && (
-              <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base">
+              <div className="px-3 sm:px-8 pb-3 sm:pb-8 text-sm sm:text-base">
                 <p>Die Anmeldung ist ab dem 01. Januar 2027 über diese Website möglich.</p>
               </div>
             )}
@@ -110,7 +110,7 @@ Nachricht: ${message}
           <div className="border-t border-primary/20 text-left">
             <button
               onClick={() => toggleAccordion(1)}
-              className="w-full flex justify-between items-center p-4 sm:p-8 hover:bg-primary/5 transition"
+              className="w-full flex justify-between items-center p-3 sm:p-8 hover:bg-primary/5 transition"
             >
               <dt className="text-xs uppercase tracking-wider text-muted-foreground">Menü</dt>
               <span style={{ color: 'var(--text-h)' }} className="text-xl">
