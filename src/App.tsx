@@ -121,7 +121,7 @@ Nachricht: ${message}
               <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
                 <p className="mb-2">Apéro mit Salzgebäck und Getränken.</p><br/>
                 <p className="mb-2">Penneplausch mit Vier verschiedenen Saucen zur Auswahl.</p>
-                <p className="mb-2">Dazu gibt es Gemüse und zum Dessert ein leckeres Schoggimousse.</p>
+                <p className="mb-2">Dazu gibt es Gemüse und zum Dessert ein leckeres Schoggicréme.</p>
                 <p>Getränke werden ebenfalls bereitgestellt.</p>
               </div>
             )}
