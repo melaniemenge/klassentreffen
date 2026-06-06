@@ -7,7 +7,7 @@ import glasses from '/assets/glasses.svg';
 import girlande from '/assets/girlande.svg';
 import { useState } from 'react';
 
-const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
+const WHATSAPP_URL = 'https://chat.whatsapp.com/K12sCbswV6kDLrbcIb4skA?s=cl&p=i&ilr=0'; 
 const WHATSAPP_URL_OK = 'https://chat.whatsapp.com/BvYR9LyuCAg311B40X5YEU?mode=gi_t';
 
 function App() {
