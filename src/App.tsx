@@ -7,7 +7,7 @@ import glasses from '/assets/glasses.svg';
 import girlande from '/assets/girlande.svg';
 import { useState } from 'react';
 
-const WHATSAPP_URL = 'https://chat.whatsapp.com/EXAMPLE'; 
+const WHATSAPP_URL = 'https://chat.whatsapp.com/K12sCbswV6kDLrbcIb4skA?s=cl&p=i&ilr=0'; 
 const WHATSAPP_URL_OK = 'https://chat.whatsapp.com/BvYR9LyuCAg311B40X5YEU?mode=gi_t';
 
 function App() {
@@ -75,7 +75,7 @@ Nachricht: ${message}
             </div>
           </dl>
         </div>
-        <div className="mt-4 sm:mt-8 rounded-2xl border border-primary/20 bg-card/60 p-3 sm:p-8 backdrop-blur-sm flex flex-col items-center text-center">
+        <div className="mt-4 sm:mt-8 rounded-2xl bg-card/60 p-3 sm:p-8 backdrop-blur-sm flex flex-col items-center text-center">
           <h2 className="text-lg sm:text-2xl font-semibold">Input für Ideen</h2>
           <p className="mt-2 sm:mt-4 text-sm sm:text-base">
             Hast du Ideen für das Klassentreffen oder möchtest du etwas beitragen? Dann gib uns hier Input: 
@@ -130,7 +130,7 @@ Nachricht: ${message}
               <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
                 <p className="mb-2">Apéro mit Salzgebäck und Getränken.</p><br/>
                 <p className="mb-2">Penneplausch mit Vier verschiedenen Saucen zur Auswahl.</p>
-                <p className="mb-2">Dazu gibt es Gemüse und zum Dessert ein leckeres Schoggimousse.</p>
+                <p className="mb-2">Dazu gibt es Gemüse und zum Dessert ein leckeres Schoggicréme.</p>
                 <p>Getränke werden ebenfalls bereitgestellt.</p>
               </div>
             )}
