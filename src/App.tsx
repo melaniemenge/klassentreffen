@@ -238,6 +238,9 @@ Nachricht: ${message}
           </form>
         </div>
         */}
+    <footer className="mt-16 text-center text-xs text-muted-foreground">
+      <p>© {new Date().getFullYear()} designed and created by <a className='underline' href="https://melaniemenge.ch" target="_blank" rel="noopener noreferrer">melaniemenge.ch</a></p>
+    </footer>
     </main>
   )
 }
