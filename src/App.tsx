@@ -84,8 +84,17 @@ Nachricht: ${message}
             
         </div>
 
+        <div className="mt-4 sm:mt-8 rounded-2xl border border-primary/20 bg-card/60 p-3 sm:p-8 backdrop-blur-sm flex flex-col items-center text-center">
+          <h2 className="text-lg sm:text-2xl font-semibold">Foto-Diashow</h2>
+          <p className="mt-2 sm:mt-4 text-sm sm:text-base">
+            Gerne würden wir während dem Klassentreffen einige alte Fotos in einer Diashow zeigen. Wenn du Fotos hast, die du gerne teilen möchtest, kannst du sie hier hochladen: 
+          </p> 
+            <a className='mt-5 inline-flex items-center justify-center rounded-full px-8 py-3 text-sm font-medium text-white transition hover:opacity-90' style={{ backgroundColor: 'var(--text-h)' }} href="https://mmenge-nas.quickconnect.to/mo/request/7CgqmKR0g" target="_blank" rel="noopener noreferrer">Bilder hochladen</a>
+            
+        </div>
+
         {/* Event info - Accordion */}
-        <div className="mt-10 sm:mt-16 rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-sm overflow-hidden">
+        <div className="mt-4 sm:mt-16 rounded-2xl border border-primary/20 bg-card/60 backdrop-blur-sm overflow-hidden">
           <h2 className="text-lg sm:text-2xl font-semibold p-3 sm:p-8 pb-3 sm:pb-4">Informationen rund ums Event</h2>
           
           {/* Accordion Item 1 */}
