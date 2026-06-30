@@ -167,8 +167,13 @@ Nachricht: ${message}
             </button>
             {openAccordion === 3 && (
               <div className="px-4 sm:px-8 pb-4 sm:pb-8 text-base text-left">
-                <p>Die Kosten belaufen sich auf 50 CHF pro Person.</p>
-                <p>Mit dem Betrag sind Getränke, Essen und die Räumlichkeit inkl. Deko beglichen.</p><br/>
+                <p>"Pay what you can" 50 - 70 Fr.</p>
+                <p>Transparente Auflistung der Kosten:</p>
+                <ul className="list-disc list-inside">  
+                  <li>Essen inkl. Getränke: 45 Fr./ Person</li>
+                  <li>Räumlichkeit inkl. Deko, Hauswartung und Rahmenprogramm: 5-25 Fr./ Person</li>
+                </ul>
+                <p>Alle zusätzlichen Beiträge werden für das Rahmenprogramm verwendet.</p><br/>
                 <p>Die Bezahlung erfolgt bei Anmeldung via Twint.</p><br/>
               </div>
             )}
